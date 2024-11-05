@@ -48,7 +48,7 @@ export class AppComponent implements OnInit{
       let ancho = !!this.formPrisma.value.ancho ? +this.formPrisma.value.ancho : 0;
       let largo = !!this.formPrisma.value.largo ? +this.formPrisma.value.largo : 0;
       let altura = !!this.formPrisma.value.altura ? +this.formPrisma.value.altura : 0;
-      this.resultP= 'El Volumen de un Prisma Rectangular es de: '+ ((largo*ancho*altura)/2) + 'mt2';
+      this.resultP= 'El Volumen de un Prisma Rectangular es de: '+ (largo*ancho*altura) + 'mt2';
       this.formPrisma.reset();
     }
     else{
